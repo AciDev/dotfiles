@@ -1,3 +1,16 @@
+format = """
+[](purple)\
+$username\
+[](bg:pink fg:purple)\
+$directory\
+[](bg:background fg:pink)\
+$all
+"""
+
+add_newline = false
+
+palette = "dracula"
+
 [aws]
 style = "bold orange"
 
@@ -7,9 +20,6 @@ success_symbol = "[λ](bold green)"
 
 [cmd_duration]
 style = "bold yellow"
-
-[directory]
-style = "bold green"
 
 [git_branch]
 style = "bold pink"
@@ -21,11 +31,22 @@ style = "bold red"
 style = "bold purple"
 
 [username]
-format = "[$user]($style_user) on "
-style_user = "bold cyan"
+format = "[ $user ]($style)"
+style_user = "bg:purple fg:background"
+style_root = "bg:purple fg:background"
+show_always = true
 
-# Use the color palette
-palette = "dracula"
+[directory]
+format = "[ $path ]($style)"
+style = "bg:pink fg:background"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[time]
+format = "[$time]($style)"
+style = "bold pink"
+disabled = false
+
 
 # Define Dracula color palette
 [palettes.dracula]
