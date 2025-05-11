@@ -1,22 +1,29 @@
 format = """
-[](purple)\
+$shell\
+[](bg:blue fg:lavender)\
 $username\
-[](bg:pink fg:purple)\
+$hostname\
+[](bg:sapphire fg:blue)\
 $directory\
-[](bg:background fg:pink)\
-$all
+[](bg:base fg:sapphire)\
+$line_break\
+$character
+"""
+
+right_format = """
+$time
 """
 
 add_newline = false
 
-palette = "dracula"
+palette = "catppuccin_mocha"
 
 [aws]
 style = "bold orange"
 
 [character]
-error_symbol = "[λ](bold red)"
-success_symbol = "[λ](bold green)"
+error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold green)"
 
 [cmd_duration]
 style = "bold yellow"
@@ -27,37 +34,62 @@ style = "bold pink"
 [git_status]
 style = "bold red"
 
-[hostname]
-style = "bold purple"
-
 [username]
-format = "[ $user ]($style)"
-style_user = "bg:purple fg:background"
-style_root = "bg:purple fg:background"
+format = "[ $user]($style)"
+style_user = "bg:blue fg:bold crust"
+style_root = "bg:blue fg:bold crust"
 show_always = true
+
+[hostname]
+format = "[@]($style)[$hostname ]($style)"
+style = "bg:blue fg:bold crust"
+ssh_only = false
+disabled = false
+
+[shell]
+format = "[ $indicator ]($style)"
+style = "bg:lavender fg:bold crust"
+bash_indicator = "#"
+fish_indicator = "󰈺"
+nu_indicator = "_"
+disabled = false
 
 [directory]
 format = "[ $path ]($style)"
-style = "bg:pink fg:background"
+style = "bg:sapphire fg:bold crust"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [time]
-format = "[$time]($style)"
-style = "bold pink"
+format = "[](bg:base fg:mauve)[ $time ]($style)[ ](bg:base fg:mauve)"
+style = "bg:mauve fg:bold crust"
 disabled = false
 
 
-# Define Dracula color palette
-[palettes.dracula]
-background = "#282a36"
-current_line = "#44475a"
-foreground = "#f8f8f2"
-comment = "#6272a4"
-cyan = "#8be9fd"
-green = "#50fa7b"
-orange = "#ffb86c"
-pink = "#ff79c6"
-purple = "#bd93f9"
-red = "#ff5555"
-yellow = "#f1fa8c"
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
