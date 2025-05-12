@@ -5,7 +5,7 @@ $username\
 $hostname\
 [](bg:sapphire fg:blue)\
 $directory\
-[](bg:base fg:sapphire)\
+[](fg:sapphire)\
 $line_break\
 $character
 """
@@ -61,7 +61,7 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [time]
-format = "[](bg:base fg:mauve)[ $time ]($style)[ ](bg:base fg:mauve)"
+format = "[](fg:mauve)[ $time ]($style)[ ](fg:mauve)"
 style = "bg:mauve fg:bold crust"
 disabled = false
 
