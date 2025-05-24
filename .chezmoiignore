@@ -1,6 +1,11 @@
 README.md
 chezmoi.toml
 
+{{ if ne .hypr true}}
+.config/hypr/*
+.config/waybar/*
+{{ end }}
+
 {{ if ne .kitty true }}
 .config/kitty/*
-{{ end}}
+{{ end }}

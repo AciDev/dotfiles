@@ -1,4 +1,5 @@
 format = """
+[](fg:lavender)\
 $shell\
 [](bg:blue fg:lavender)\
 $username\
