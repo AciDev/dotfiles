@@ -1,0 +1,6 @@
+README.md
+chezmoi.toml
+
+{{ if ne .kitty true }}
+.config/kitty/*
+{{ end}}
