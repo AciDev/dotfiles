@@ -2,6 +2,7 @@ README.md
 chezmoi.toml
 
 {{ if ne .hypr true}}
+.config/dolphinrc
 .config/hypr/*
 .config/waybar/*
 {{ end }}
