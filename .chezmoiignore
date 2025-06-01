@@ -5,8 +5,11 @@ chezmoi.toml
 .config/dolphinrc
 .config/hypr/*
 .config/waybar/*
+.config/swaync/*
+.config/spicetify/*
 {{ end }}
 
 {{ if ne .kitty true }}
 .config/kitty/*
+.config/fish/functions/ssh.fish
 {{ end }}

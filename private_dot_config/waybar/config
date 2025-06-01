@@ -2,8 +2,8 @@
     "layer": "top",
     "position": "top",
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "power-profiles-daemon", "custom/lock", "custom/power"],
     "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -13,31 +13,26 @@
              "2": "二",
              "3": "三",
              "4": "四",
-             "5": "五"
+             "5": "五",
+             "6": "六",
+             "7": "七",
+             "8": "八",
+             "9": "九"
          },
      },
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
-    "custom/music": {
-        "format": "  {}",
-        "escape": true,
-        "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
-        "on-click": "playerctl play-pause",
-        "max-length": 50
-    },
     "clock": {
         "timezone": "Europe/London",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+        "format-alt": "\t{:%d/%m/%Y}",
+        "format": "\t{:%H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon}",
+        "format": "{icon}\t{percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -45,20 +40,31 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
+        "format": "{icon}\t{capacity}%",
+        "format-charging": "󰂄",
+        "format-plugged": "󰂄",
         "format-alt": "{icon}",
-        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["󰁺", "󰁻",  "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 1,
         "format": "{icon}\t{volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
     },
     "custom/lock": {
         "tooltip": false,
@@ -68,6 +74,6 @@
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout &",
-        "format": "襤"
+        "format": "休"
     }
 }

@@ -43,8 +43,10 @@
 #clock,
 #battery,
 #pulseaudio,
+#wireplumber,
 #custom-lock,
 #language,
+#power-profiles-daemon,
 #custom-power {
   background-color: @surface0;
   padding: 0.5rem 1rem;
@@ -78,7 +80,8 @@
   border-radius: 0;
 }
 
-#pulseaudio {
+#pulseaudio,
+#wireplumber {
   color: @maroon;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
@@ -94,7 +97,7 @@
   color: @lavender;
 }
 
-#custom-lock {
+#power-profiles-daemon {
   margin-left: 1rem;
   border-radius: 1rem 0px 0px 1rem;
 }
@@ -106,10 +109,24 @@
 }
 
 #tray {
-  margin-right: 1rem;
+  color: @mauve;
   border-radius: 1rem;
 }
 
 #workspaces button.urgent {
   color: @red;
+}
+
+#power-profiles-daemon.performance {
+  color: @flamingo;
+}
+
+
+#power-profiles-daemon.balanced {
+  color: @peach;
+}
+
+
+#power-profiles-daemon.power-saver {
+  color: @green;
 }
