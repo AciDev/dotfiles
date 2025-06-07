@@ -3,7 +3,7 @@
     "position": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "power-profiles-daemon", "custom/lock", "custom/power"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "network", "clock", "tray", "power-profiles-daemon", "custom/lock", "custom/power"],
     "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -32,7 +32,9 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon}\t{percent}%",
+        "format": "{icon}",
+        "format-alt": "{icon}\t{percent}%",
+        "tooltip-format": "Brightness: {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -40,24 +42,38 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}\t{capacity}%",
+        "format": "{icon}",
         "format-charging": "󰂄",
         "format-plugged": "󰂄",
-        "format-alt": "{icon}",
-        "format-icons": ["󰁺", "󰁻",  "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-alt": "{icon}\t{capacity}%",
+        "format-icons": ["󰁺", "󰁻",  "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip-format": "Percentage: {capacity}%\n{timeTo}"
     },
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{icon}\t{volume}%",
+        "format": "{icon}",
+        "format-alt": "{icon}\t{volume}%",
+        "tooltip-format": "Volume: {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗 ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+        "tooltip-format-ethernet": "{ifname}  ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
     "power-profiles-daemon": {
         "format": "{icon}",
-        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip-format": "Power profile: {profile}",
         "tooltip": true,
         "format-icons": {
             "default": "",

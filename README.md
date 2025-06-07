@@ -1,7 +1,6 @@
 Initial Packages
 
-iwd networkmanager firefox linux-firmware brightnessctl chezmoi git openssh neovim tmux fish starship waybar nerd-fonts hyprpaper hyprlock unzip fzf nushell btop pavucontrol lazygit base-devel curl ripgrep fd zoxide eza wireless-regdb nwg-look qt6-svg qt6-declarative qt5-quickcontrols2 qt5-svg qt5-base qt5-graphicaleffects plymouth kvantum timeshift grub-btrfs xorg-xhost swaync libnotify spotify-launcher moreutils easyeffects adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts fcitx5-im fcitx5-configtool fcitx5-mozc wl-clipboard fastfetch fisher libvirt dnsmasq qemu-desktop virt-manager swtpm power-profiles-daemon bat
-
+iwd networkmanager firefox linux-firmware brightnessctl chezmoi git openssh neovim tmux fish starship waybar nerd-fonts hyprpaper hyprlock unzip fzf nushell btop pavucontrol lazygit base-devel curl ripgrep fd zoxide eza wireless-regdb nwg-look qt6-svg qt6-declarative qt5-quickcontrols2 qt5-svg qt5-base qt5-graphicaleffects plymouth kvantum timeshift grub-btrfs xorg-xhost swaync libnotify spotify-launcher moreutils easyeffects adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts fcitx5-im fcitx5-configtool fcitx5-mozc wl-clipboard fastfetch fisher libvirt dnsmasq qemu-desktop virt-manager swtpm power-profiles-daemon bat lua51 luarocks inotify-tools less httpie npm ansible ansible-lint man
 
 
 Git Repositories

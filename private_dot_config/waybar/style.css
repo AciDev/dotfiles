@@ -45,12 +45,17 @@
 #pulseaudio,
 #wireplumber,
 #custom-lock,
+#network,
 #language,
 #power-profiles-daemon,
 #custom-power {
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
+}
+
+#network {
+  color: @sapphire;
 }
 
 #clock {

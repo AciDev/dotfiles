@@ -1,0 +1,12 @@
+[General]
+TerminalApplication=kitty
+
+[KDE]
+widgetStyle=qt6ct-style
+
+[UiSettings]
+ColorScheme=catppuccin-mocha-yellow
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
