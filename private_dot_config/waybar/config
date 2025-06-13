@@ -8,6 +8,9 @@
          "disable-scroll": true,
          "sort-by-name": true,
          "format": "{icon}",
+         "persistent-workspaces": {
+             "*": 3, 
+         },
          "format-icons": {
              "1": "一",
              "2": "二",

@@ -2,28 +2,31 @@
 
 * {
   font-family: "Maple Mono NF";
-  font-size: 17px;
+  font-size: 14px;
   min-height: 0;
 }
 
 #waybar {
   background: transparent;
   color: @text;
-  margin: 5px 5px;
+  margin: 0px 0px;
 }
 
 #workspaces {
-  border-radius: 1rem;
-  margin: 5px;
+  border-radius: 1rem 1rem 1rem 1rem;
   background-color: @surface0;
+  opacity: 0.95;
   margin-left: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #workspaces button {
   color: @lavender;
   border-radius: 1rem;
-  margin-right: 0.3rem;
-  margin-left: 0.3rem;
+  padding: 0rem 0.7rem;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
   font-weight: 900;
 }
 
@@ -49,9 +52,12 @@
 #language,
 #power-profiles-daemon,
 #custom-power {
+  font-size: 14px;
+  font-weight: 900;
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
+  opacity: 0.95;
 }
 
 #network {

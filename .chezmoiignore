@@ -2,10 +2,11 @@ README.md
 chezmoi.toml
 
 {{ if ne .hypr true}}
-.config/dolphinrc
+.config/kdeglobals
 .config/hypr/*
 .config/waybar/*
 .config/swaync/*
+.config/wofi/*
 .config/spicetify/*
 {{ end }}
 
