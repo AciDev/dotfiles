@@ -53,6 +53,7 @@
     "inhibitors",
     "title",
     "dnd",
+    "mpris",
     "notifications"
   ],
   "widget-config": {
@@ -75,8 +76,7 @@
     },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12,
-      "blacklist": []
+      "image-radius": 12
     },
     "buttons-grid": {
       "actions": [

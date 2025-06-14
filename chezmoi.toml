@@ -1,3 +1,4 @@
 [data]
   hypr = false
   kitty = true
+  atuin_url = "https://api.atuin.sh"
