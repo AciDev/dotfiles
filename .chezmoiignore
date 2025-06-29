@@ -8,6 +8,26 @@ chezmoi.toml
 .config/swaync/*
 .config/wofi/*
 .config/spicetify/*
+.config/networkmanager-dmenu/*
+{{ end }}
+
+{{ if ne .bat true }}
+.config/fish/functions/cat.fish
+.config/fish/functions/catp.fish
+{{ end }}
+
+{{ if ne .eza true }}
+.config/fish/functions/ls.fish
+{{ end }}
+
+{{ if ne .zoxide true }}
+.config/fish/conf.d/zoxide.fish
+.config/fish/functions/cd.fish
+{{ end }}
+
+{{ if ne .atuin true }}
+.config/fish/conf.d/atuin.fish
+.config/atuin/*
 {{ end }}
 
 {{ if ne .kitty true }}

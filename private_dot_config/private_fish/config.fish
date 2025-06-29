@@ -10,8 +10,8 @@ if status is-interactive
 --color=border:#313244,label:#CDD6F4"
 end
 
-function starship_transient_rprompt_func
-    starship module time
+function starship_transient_prompt_func
+    starship module custom.time
 end
 
 starship init fish | source

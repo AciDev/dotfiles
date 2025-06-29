@@ -1,6 +1,6 @@
 Initial Packages
 
-iwd networkmanager firefox linux-firmware brightnessctl chezmoi git openssh neovim tmux fish starship waybar nerd-fonts hyprpaper hyprlock unzip fzf nushell btop pavucontrol lazygit base-devel curl ripgrep fd zoxide eza wireless-regdb nwg-look qt6-svg qt6-declarative qt5-quickcontrols2 qt5-svg qt5-base qt5-graphicaleffects plymouth kvantum timeshift grub-btrfs xorg-xhost swaync libnotify spotify-launcher moreutils easyeffects adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts fcitx5-im fcitx5-configtool fcitx5-mozc wl-clipboard fastfetch fisher libvirt dnsmasq qemu-desktop virt-manager swtpm power-profiles-daemon bat lua51 luarocks inotify-tools less httpie npm ansible ansible-lint man udisks2 noto-fonts-emoji sshpass atuin telegram-desktop bluez bluez-utils bluez-deprecated-tools bluez-obex bluetui yazi
+iwd networkmanager firefox linux-firmware brightnessctl chezmoi git openssh neovim tmux fish starship waybar nerd-fonts hyprpaper hyprlock unzip fzf nushell btop pavucontrol lazygit base-devel curl ripgrep fd zoxide eza wireless-regdb nwg-look qt6-svg qt6-declarative qt5-quickcontrols2 qt5-svg qt5-base qt5-graphicaleffects plymouth kvantum timeshift grub-btrfs xorg-xhost swaync libnotify spotify-launcher moreutils easyeffects adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts fcitx5-im fcitx5-configtool fcitx5-mozc wl-clipboard fastfetch fisher libvirt dnsmasq qemu-desktop virt-manager swtpm power-profiles-daemon bat lua51 luarocks inotify-tools less httpie npm ansible ansible-lint man udisks2 noto-fonts-emoji sshpass atuin telegram-desktop bluez bluez-utils bluez-deprecated-tools bluez-obex bluetui yazi noto-fonts-extra otf-latinmodern-math otf-libertinus gnu-free-fonts obsidian inter-font fwupd bolt usbutils jq
 
 Git Repositories
 
@@ -17,4 +17,4 @@ Git Repositories
 
 Yay Packages
 
-catppuccin-cursors-mocha catppuccin-gtk-theme-mocha zen-browser-bin qt6ct-kde timeshift-systemd-timer vesktop-bin spicetify-cli clipse google-chrome wlogout termius pokeget python-catppuccin
+catppuccin-cursors-mocha catppuccin-gtk-theme-mocha zen-browser-bin qt6ct-kde timeshift-systemd-timer vesktop-bin spicetify-cli clipse google-chrome wlogout termius pokeget python-catppuccin networkmanager-dmenu-git

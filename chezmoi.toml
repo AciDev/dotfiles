@@ -1,4 +1,8 @@
 [data]
   hypr = false
   kitty = true
+  bat = false
+  zoxide = false
+  eza = false
+  atuin = false  
   atuin_url = "https://api.atuin.sh"

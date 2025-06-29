@@ -5,14 +5,12 @@ $shell\
 $username\
 $hostname\
 [](bg:sapphire fg:blue)\
+$time\
+[](bg:sky fg:sapphire)\
 $directory\
-[](fg:sapphire)\
+[](fg:sky)\
 $line_break\
 $character
-"""
-
-right_format = """
-$time
 """
 
 add_newline = false
@@ -57,15 +55,21 @@ disabled = false
 
 [directory]
 format = "[ $path ]($style)"
-style = "bg:sapphire fg:bold crust"
+style = "bg:sky fg:bold crust"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [time]
-format = "[](fg:mauve)[ $time ]($style)[ ](fg:mauve)"
-style = "bg:mauve fg:bold crust"
+format = "[ $time ]($style)"
+style = "bg:sapphire fg:bold crust"
+time_format = "%R"
 disabled = false
 
+[custom.time]
+command = 'date +%R'
+format = '[](fg:lavender)[$output]($style)[](fg:lavender) -> '
+style = "bg:lavender fg:bold crust"
+when = true
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
