@@ -8,7 +8,11 @@ $hostname\
 $time\
 [](bg:sky fg:sapphire)\
 $directory\
-[](fg:sky)\
+[](bg:green fg:sky)\
+$git_branch\
+$git_status\
+$git_state\
+[](fg:green)\
 $line_break\
 $character
 """
@@ -28,10 +32,12 @@ success_symbol = "[❯](bold green)"
 style = "bold yellow"
 
 [git_branch]
-style = "bold pink"
+style = "bg:green fg:bold crust"
+format = "[ $branch(:$remote_branch) ]($style)"
 
 [git_status]
-style = "bold red"
+style = "bg:green fg:bold crust"
+format = "([$all_status$ahead_behind]($style))"
 
 [username]
 format = "[ $user]($style)"
@@ -51,6 +57,7 @@ style = "bg:lavender fg:bold crust"
 bash_indicator = "#"
 fish_indicator = "󰈺"
 nu_indicator = "_"
+zsh_indicator = ""
 disabled = false
 
 [directory]
