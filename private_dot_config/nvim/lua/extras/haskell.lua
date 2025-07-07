@@ -1,4 +1,4 @@
 -- stylua: ignore
 return {
-  { import = "lazyvim.plugins.extras.lang.php" },
+  { import = "lazyvim.plugins.extras.lang.haskell" },
 }
