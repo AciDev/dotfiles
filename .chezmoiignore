@@ -34,3 +34,7 @@ chezmoi.toml
 .config/kitty/*
 .config/fish/functions/ssh.fish
 {{ end }}
+
+{{ if eq .chezmoi.os "linux" }}
+.config/fish/conf.d/mac.fish
+{{ end }}
