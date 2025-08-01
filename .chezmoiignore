@@ -3,11 +3,17 @@ chezmoi.toml
 
 {{ if ne .hypr true}}
 .config/kdeglobals
+.config/hpyr
 .config/hypr/*
+.config/waybar
 .config/waybar/*
+.config/swaync
 .config/swaync/*
+.config/wofi
 .config/wofi/*
+.config/spicetify
 .config/spicetify/*
+.config/networkmanager-dmenu
 .config/networkmanager-dmenu/*
 {{ end }}
 
@@ -27,10 +33,12 @@ chezmoi.toml
 
 {{ if ne .atuin true }}
 .config/fish/conf.d/atuin.fish
+.config/atuin
 .config/atuin/*
 {{ end }}
 
 {{ if ne .kitty true }}
+.config/kitty
 .config/kitty/*
 .config/fish/functions/ssh.fish
 {{ end }}
