@@ -12,6 +12,7 @@ return {
       { "<leader>tr", ":Laravel routes<cr>" },
       { "<leader>ti", ":Laravel route_info<cr>" },
       { "<leader>tm", ":Laravel related<cr>" },
+      { "<leader>tt", ":Laravel artisan tinker<cr>" },
     },
     event = { "VeryLazy" },
     opts = {
