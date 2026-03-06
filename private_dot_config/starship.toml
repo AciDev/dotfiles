@@ -76,6 +76,8 @@ command = 'date +%R'
 format = '[](fg:lavender)[$output]($style)[](fg:lavender) -> '
 style = "bg:lavender fg:bold crust"
 when = true
+command_timeout = 20000
+shell = ["bash", "--noprofile", "--norc"]
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
