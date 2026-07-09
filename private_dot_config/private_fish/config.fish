@@ -3,7 +3,8 @@ if status is-interactive
     set -gx EDITOR nvim
     set -gx SHELL (which fish)
     fish_add_path -g --append --path $HOME/.ghcup/bin
-    set -Ux FZF_DEFAULT_OPTS "\
+    set -gx FZF_DEFAULT_OPTS "\
+--height=50% --layout=reverse --border --info=inline --tabstop=2 \
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
 --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
 --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
@@ -17,3 +18,4 @@ end
 
 starship init fish | source
 enable_transience
+fish_add_path $HOME/.local/bin
